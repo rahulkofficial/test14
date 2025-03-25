@@ -1,0 +1,160 @@
+
+body{
+    background:url('../images/bg3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    margin: 0;
+}
+
+
+header{
+    background: linear-gradient(to right,#000,#2f6ac8,#000);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    top:0;
+    left: 0;
+    right:0;
+    z-index: 1;
+}
+header.test{
+    background: linear-gradient(to right,#000,#c82f2f,#000);
+}
+header div.left{
+    width:2%;
+}
+
+header div.left a{
+    display: block;
+    width: 100%;
+}
+header div.left a img{
+    display: block;
+    width: 100%;
+} 
+
+header div.right a{
+    color:white;
+    margin-right: 40px;
+    text-decoration: none;
+}
+
+header div.right a:hover{
+    text-decoration:underline;
+    color: #73b1cd;
+}
+
+header div.right a:last-child{
+    margin-right: 0;
+}
+div.main{
+    height:100vh;
+    text-align: center;
+}
+
+div.main h1{
+    margin: 0;
+    padding-top: 80px;
+}
+
+
+div.main div.todo{
+    background: #0b3e53;
+    width:44%;
+    height:70vh;
+    margin: auto;
+    margin-top:28px;
+    padding: 20px;
+    border-radius: 20px;
+    overflow: auto;
+    scrollbar-width: none;
+
+}
+
+div.main div.todo div.input{
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    border-radius: 10px;
+    padding-left: 4px;
+    box-shadow: 0px 0px 10px #3ec8ffeb;
+}
+
+div.main div.todo div.input input{
+    outline: none;
+    border: none;
+    display: block;
+    width: 80%;
+}
+div.main div.todo div.input button{
+    display: block;
+    width: 20%;
+    border:none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 4px 0px;
+    background: #0b3e53;
+    color: #fff;
+}
+
+div.main div.todo div.input button:hover{
+    cursor: pointer;
+    background: #02141c;
+}
+
+div.main div.todo ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+}
+
+div.main div.todo ul li{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+div.main div.todo ul li button.com{
+    background: none;
+    color:#26ff13;
+    border:2px solid #26ff13;
+    padding:4px 8px;
+    border-radius: 10px;
+}
+div.main div.todo ul li button.com:hover{
+    background: #27ff136d;
+    cursor: pointer;
+}
+
+
+
+
+div.main div.todo ul li button.del{
+    background: none;
+    color:#ff1313;
+    border:2px solid #ff1313;
+    padding:4px 8px;
+    border-radius: 10px;
+}
+div.main div.todo ul li button.del:hover{
+    background: rgba(255, 19, 19, 0.427);
+    cursor: pointer;
+
+}
+
+div.main div.todo ul li.co span{
+    color:rgb(21, 238, 21);
+    text-decoration: line-through;
+}
+
+div.main div.todo ul li.co button.com{
+    visibility: hidden;
+}
+
